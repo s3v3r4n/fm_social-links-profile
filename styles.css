@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+
+    /** FONTS **/
+
+    --main-font: Inter;
+    --default-size: 0.875rem; /** 0.875 * 16 = 14px **/
+    --default-weight: 400;
+    --bold-weight-1: 600;
+    --bold-weight-2: 700;
+
+
+    /** COLORS **/
+
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+
+
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--grey900);
+    font-family: var(--main-font);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/** MAIN BOX STYLING **/
+
+.main-links-box {
+    background-color: var(--grey800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 25rem;
+}
+
+
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-profile img {
+    border-radius: 100%;
+    width: 5rem;
+}
+
+.user-location {
+    color: var(--green);
+    font-size: var(--default-size);
+    font-weight: var(--bold-weight-1);
+}
+
+
+.description {
+    color: var(--white);
+    font-weight: var(--default-weight);
+    font-size: var(--default-size);
+}
+
+.user-profile .username {
+    font-size: 1.5rem;
+    font-weight: var(--bold-weight-1);
+    margin-top: 1rem;
+}
+
+.links-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.links-box a {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--grey700);
+    border-radius: 0.5rem;
+    
+}
+
+.links-box a:hover,
+.link-box a:active {
+    color: var(--grey900);
+    background-color: var(--green);
+    transition: 0.3s;
+}
